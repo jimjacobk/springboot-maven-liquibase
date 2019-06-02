@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - logicalFilePath: DataSetup.yaml
+  - changeSet:
+      id: 20190601004
+      author: jimjacob
+      changes:
+        - sqlFile:
+            dbms: h2
+            encoding: utf-8
+            path: ../data/student-data.sql
+            relativeToChangelogFile: true
+

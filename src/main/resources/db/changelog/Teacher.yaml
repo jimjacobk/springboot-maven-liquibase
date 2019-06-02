@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - logicalFilePath: Teacher.yaml
+  - changeSet:
+      id: 20190601001
+      author: jimjacob
+      changes:
+        - createTable:
+            tableName: Teacher
+            schemaName: ${schemaname}
+            columns:
+              - column:
+                  name: id
+                  type: varchar(36)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: firstname
+                  type: varchar(50)
+              - column:
+                  name: lastname
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+

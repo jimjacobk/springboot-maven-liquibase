@@ -1,0 +1,13 @@
+databaseChangeLog:
+
+  - include:
+      file: changelog/Teacher.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: changelog/Student.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: changelog/DataSetup.yaml
+      relativeToChangelogFile: true
